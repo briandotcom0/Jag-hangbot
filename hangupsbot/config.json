@@ -1,7 +1,7 @@
 {
   "admins": [
+    "109306138472599038333"
   ],
-  "autoreplies_enabled": true,
   "autoreplies": [
     [
       [
@@ -11,8 +11,9 @@
       "Hello world!"
     ]
   ],
-  "commands_user": [],
+  "autoreplies_enabled": true,
   "commands_enabled": true,
+  "commands_user": [],
   "conversations": {
     "CONV_ID": {
       "autoreplies_enabled": false,
@@ -21,8 +22,7 @@
     }
   },
   "link_to_guide": "https://github.com/hangoutsbot/hangoutsbot/wiki/User-Guide",
-  "mentionall":true,
-  "silentmode":false,
+  "mentionall": true,
   "mentionallwhitelist": [],
   "mentionerrors": true,
   "mentionquidproquo": false,
@@ -33,10 +33,31 @@
     "autoreply",
     "dnd",
     "starter",
-    "remind"
+    "remind",
+    "webbridge_hubot",
+    "slackrtm"
+  ],
+  "silentmode": false,
+
+"hubot": [
+    {
+      "certfile": "./server.pem",
+      "name": "127.0.0.1",
+      "port": 8081,
+      "synced_conversations": [
+        "gmK2XfUX5DSk0zCF3",
+        "<conv id>"
+      ],
+      "HUBOT_URL": "http://127.0.0.1:8080/receive/"
+    }
+  ],
+  "slackrtm": [
+    {
+      "name": "Jagielski",
+      "key-ike": "xoxp-146487155157-146466359764-156531798165-1b2428b96b7331f66642f13b27696430",
+      "key": "xoxb-156481964708-zeEK0tcDjukN0JpEkb70EVxu",
+      "admins": []
+    }
   ]
-<<<<<<< HEAD
-=======
- 
->>>>>>> 72a4b5610db0c5be8b6966cb4582d5e722ed4a30
 }
+
