@@ -159,9 +159,10 @@ class TelegramBot(telepot.async.Bot):
                         if cmd in self.commands:
                             yield from self.commands[cmd](self, chat_id, args)
                         else:
-                            if self.config['be_quiet']:
-                                pass
-                            else:
+#fix???
+                            #if self.config['be_quiet']:
+                            #    pass
+                            #else:
                                 yield from self.sendMessage(chat_id, "Unknown command: {cmd}".format(cmd=cmd))
 
                     else:  # plain text message
